@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/listBg" >
+    
+    <include layout="@layout/top_view2" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <ListView
+        android:id="@+id/listLoan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/lineColor"
+        android:layout_marginTop="15dp"
+        android:dividerHeight="1dp" />
+    
+    <LinearLayout 
+        android:id="@+id/loanEmptyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_tips"
+            android:text="@string/loan_tips"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/textSizeMinor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_nocontent"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/gray"
+            android:text="@string/nocontent"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+    </FrameLayout>
+
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout  android:padding="10dp"  android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:background="@drawable/btn_bg_selector"
+                    android:text="@string/loan_apply"
+                    android:id="@+id/bt_loanapply"
+                    android:textSize="@dimen/text_size_larger_dimen"
+                    />
+            </LinearLayout>
+            <include layout="@layout/unlogin_foot_view" android:id="@+id/btn_gologin"/>
+        </FrameLayout>
+</LinearLayout>

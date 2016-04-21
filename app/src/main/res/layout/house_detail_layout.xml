@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top_view2" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/listBg"
+        android:scrollbars="none"
+        android:overScrollMode="never" >
+
+        <LinearLayout
+            android:id="@+id/rentDetailLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            android:background="@color/listBg" >
+
+            <!-- 房产地址 -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                
+                android:contentDescription="@string/empty"
+                android:src="@color/lineColor" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/icon_address"
+                />
+            <TextView
+                android:id="@+id/textHouseAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/listMarginLeft"
+                android:paddingRight="@dimen/rentLineRight"
+                android:text="哇啊啊啊啊啊啊啊啊"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSizeMain" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:contentDescription="@string/empty"
+                android:src="@color/lineColor" />
+
+            <!-- 建造年份 -->
+            <LinearLayout style="@style/rent_detail_layout" >
+
+                <TextView
+                    style="@style/rent_detail_lab"
+                    android:text="@string/labHouseBulidYear" />
+
+                <TextView
+                    android:id="@+id/textBulidYead"
+                    style="@style/rent_detail_content"
+                    android:gravity="right|center_vertical"
+                    android:layout_marginRight="@dimen/rentLineRight" />
+            </LinearLayout>
+
+            <include layout="@layout/short_line" />
+
+            <!-- 使用面积 -->
+            <LinearLayout style="@style/rent_detail_layout" >
+
+                <TextView
+                    style="@style/rent_detail_lab"
+                    android:text="@string/labHouseArea" />
+
+                <TextView
+                    android:id="@+id/textHouseArea"
+                    style="@style/rent_detail_content"
+                    android:gravity="right|center_vertical"
+                    android:layout_marginRight="@dimen/rentLineRight" />
+            </LinearLayout>
+
+            <include layout="@layout/short_line" />
+
+            <!-- 购买价格 -->
+            <LinearLayout style="@style/rent_detail_layout" >
+
+                <TextView
+                    style="@style/rent_detail_lab"
+                    android:text="@string/labHousePrice" />
+
+                <TextView
+                    android:id="@+id/textHousePrice"
+                    style="@style/rent_detail_content"
+                    android:gravity="right|center_vertical"
+                    android:layout_marginRight="@dimen/rentLineRight" />
+            </LinearLayout>
+
+            <include layout="@layout/short_line" />
+
+            <!-- 过户时间 -->
+            <LinearLayout style="@style/rent_detail_layout" >
+
+                <TextView
+                    style="@style/rent_detail_lab"
+                    android:text="@string/labHouseTracTime" />
+
+                <TextView
+                    android:id="@+id/textHouseTracTime"
+                    style="@style/rent_detail_content"
+                    android:gravity="right|center_vertical"
+                    android:layout_marginRight="@dimen/rentLineRight" />
+            </LinearLayout>
+
+            <include layout="@layout/short_line" />
+
+            <!-- 类型 -->
+            <LinearLayout style="@style/rent_detail_layout" >
+
+                <TextView
+                    style="@style/rent_detail_lab"
+                    android:text="@string/labHouseType" />
+
+                <TextView
+                    android:id="@+id/textHouseType"
+                    android:gravity="right|center_vertical"
+                    style="@style/rent_detail_content"
+                    android:layout_marginRight="@dimen/rentLineRight" />
+            </LinearLayout>
+
+            <include layout="@layout/short_line" />
+
+            <!-- 房型 -->
+            <LinearLayout style="@style/rent_detail_layout" >
+
+                <TextView
+                    style="@style/rent_detail_lab"
+                    android:text="@string/labHouseModel" />
+
+                <TextView
+                    android:id="@+id/textHouseModel"
+                    android:gravity="right|center_vertical"
+                    style="@style/rent_detail_content"
+                    android:layout_marginRight="@dimen/rentLineRight" />
+            </LinearLayout>
+
+            <include layout="@layout/short_line" />
+
+            <!-- 房间 -->
+            <LinearLayout style="@style/rent_detail_layout" >
+
+                <TextView
+                    style="@style/rent_detail_lab"
+                    android:text="@string/labHouseRoom" />
+
+                <TextView
+                    android:id="@+id/textHouseRoom"
+                    style="@style/rent_detail_content"
+                    android:gravity="right|center_vertical"
+                    android:layout_marginRight="@dimen/rentLineRight" />
+            </LinearLayout>
+
+            <include layout="@layout/short_line" />
+
+            <!-- 卫生间 -->
+            <LinearLayout style="@style/rent_detail_layout" >
+
+                <TextView
+                    style="@style/rent_detail_lab"
+                    android:text="@string/labHouseBath" />
+
+                <TextView
+                    android:id="@+id/textHouseBath"
+                    style="@style/rent_detail_content"
+                    android:gravity="right|center_vertical"
+                    android:layout_marginRight="@dimen/rentLineRight" />
+            </LinearLayout>
+
+            <include layout="@layout/short_line" />
+
+            <!-- 房产税 -->
+            <LinearLayout style="@style/rent_detail_layout" >
+
+                <TextView
+                    style="@style/rent_detail_lab"
+                    android:text="@string/labHouseTax" />
+
+                <TextView
+                    android:id="@+id/textHouseTax"
+                    style="@style/rent_detail_content"
+                    android:gravity="right|center_vertical"
+                    android:layout_marginRight="@dimen/rentLineRight" />
+            </LinearLayout>
+
+            <include layout="@layout/short_line" />
+
+            <!-- 物业费 -->
+            <LinearLayout style="@style/rent_detail_layout" >
+
+                <TextView
+                    style="@style/rent_detail_lab"
+                    android:text="@string/labHouseFee" />
+
+                <TextView
+                    android:id="@+id/textHouseFee"
+                    style="@style/rent_detail_content"
+                    android:gravity="right|center_vertical"
+                    android:layout_marginRight="@dimen/rentLineRight" />
+            </LinearLayout>
+
+            <include layout="@layout/short_line" />
+
+            <!-- 保险费 -->
+            <LinearLayout style="@style/rent_detail_layout" >
+
+                <TextView
+                    style="@style/rent_detail_lab"
+                    android:text="@string/labHouseInsurance" />
+
+                <TextView
+                    android:id="@+id/textHouseInsurance"
+                    style="@style/rent_detail_content"
+                    android:gravity="right|center_vertical"
+                    android:layout_marginRight="@dimen/rentLineRight" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:contentDescription="@string/empty"
+                android:src="@color/lineColor" />
+
+            <!-- 房产图片 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/houseimg_icon"
+                android:gravity="center_vertical"
+                android:drawablePadding="5dp"
+                android:paddingLeft="@dimen/listMarginLeft"
+                android:text="@string/houseImage"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:contentDescription="@string/empty"
+                android:src="@color/lineColor" />
+
+            <RelativeLayout
+                android:id="@+id/layoutHousePic"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="15dp"
+                android:visibility="invisible" >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewPageHousePic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center" />
+
+                <LinearLayout
+                    android:id="@+id/layoutPicFlag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10.0dip"
+                    android:orientation="horizontal" />
+            </RelativeLayout>
+            
+
+        </LinearLayout>
+    </ScrollView>
+    <include
+        android:id="@+id/unLoginLayout"
+        layout="@layout/unlogin_foot_view"
+        android:visibility="visible" />
+
+</LinearLayout>

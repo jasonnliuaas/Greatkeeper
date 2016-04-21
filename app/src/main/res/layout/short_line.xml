@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/rentLineLeft"
+        android:layout_marginRight="@dimen/rentLineRight"
+        android:contentDescription="@string/empty"
+        android:src="@color/lineColor"
+        android:textColor="@color/textGray"
+        android:textSize="@dimen/textSizeMinor" />
+
+</LinearLayout>

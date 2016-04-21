@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/topSize"
+    android:gravity="center_vertical"
+    android:background="@color/white" >
+    
+    <ImageButton
+        android:layout_width="@dimen/topSize"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:background="@null"
+        android:contentDescription="@string/empty"
+        android:onClick="goBack"
+        android:padding="5dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/btn_goback" />
+    
+    <TextView
+        android:id="@+id/textTopTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/mainContent" />
+    
+    <TextView
+        android:id="@+id/tv_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        android:visibility="visible"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/orange"
+        android:layout_marginEnd="10dp" />
+    
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@color/lineColor"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="@string/empty" />
+</RelativeLayout>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top_view2" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/listBg"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical" >
+
+            <!-- 维修房产地址 -->
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:contentDescription="@string/empty"
+                android:src="@color/lineColor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/icon_address"
+                    />
+
+                <TextView
+                    android:id="@+id/textRepairAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingLeft="@dimen/listMarginLeft"
+                    android:paddingRight="15dp"
+                    android:maxEms="15"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSizeMain" />
+            </LinearLayout>
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:contentDescription="@string/empty"
+                android:src="@color/lineColor" />
+
+            <!-- 维修事项 -->
+
+            <LinearLayout style="@style/rent_detail_layout" >
+
+                <TextView
+                    style="@style/rent_detail_lab"
+                    android:text="@string/labRepairTitle" />
+
+                <TextView
+                    android:id="@+id/textRepairName"
+                    style="@style/rent_detail_content"
+                    android:gravity="right|center_vertical"
+                    android:layout_marginRight="@dimen/rentLineRight" />
+            </LinearLayout>
+
+            <include layout="@layout/short_line" />
+
+            <!-- 预计花销 -->
+
+            <LinearLayout style="@style/rent_detail_layout" >
+
+                <TextView
+                    style="@style/rent_detail_lab"
+                    android:text="@string/labRepairCost" />
+
+                <TextView
+                    android:id="@+id/textRepairCost"
+                    style="@style/rent_detail_content"
+                    android:gravity="right|center_vertical"
+                    android:layout_marginRight="@dimen/rentLineRight" />
+            </LinearLayout>
+
+            <include layout="@layout/short_line" />
+
+            <!-- 预计耗时 -->
+
+            <LinearLayout style="@style/rent_detail_layout" >
+
+                <TextView
+                    style="@style/rent_detail_lab"
+                    android:text="@string/labRepairTime" />
+
+                <TextView
+                    android:id="@+id/textRepairTime"
+                    android:gravity="right|center_vertical"
+                    style="@style/rent_detail_content"
+                    android:layout_marginRight="@dimen/rentLineRight" />
+            </LinearLayout>
+
+            <include layout="@layout/short_line" />
+
+            <!-- 维修前 -->
+
+            <LinearLayout style="@style/rent_detail_layout" >
+
+                <TextView
+                    style="@style/rent_detail_lab"
+                    android:layout_height="match_parent"
+                    android:gravity="top"
+                    android:text="@string/labRepairBefore" />
+
+                <ImageView
+                    android:id="@+id/imgRepairBefore"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_marginRight="@dimen/rentLineRight"
+                    android:contentDescription="@string/empty"
+                    android:scaleType="fitXY"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/textNoPicBefore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/rentLineRight"
+                    android:gravity="center"
+                    android:text="@string/repairNoPic"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/textSizeMinor"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <include layout="@layout/short_line" />
+
+            <!-- 维修后 -->
+
+            <LinearLayout style="@style/rent_detail_layout" >
+
+                <TextView
+                    style="@style/rent_detail_lab"
+                    android:layout_height="match_parent"
+                    android:gravity="top"
+                    android:text="@string/labRepairAfter" />
+
+                <ImageView
+                    android:id="@+id/imgRepairAfter"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_marginRight="@dimen/rentLineRight"
+                    android:contentDescription="@string/empty"
+                    android:scaleType="fitXY"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/textNoPicAfter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/rentLineRight"
+                    android:gravity="center"
+                    android:text="@string/repairNoPic"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/textSizeMinor"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/rentDetailSpacing"
+                android:paddingTop="@dimen/rentDetailSpacing" >
+
+                <Button
+                    android:id="@+id/btnRepairConfirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/listMarginLeft"
+                    android:layout_marginRight="@dimen/listMarginLeft"
+                    android:background="@drawable/btn_bg"
+                    android:clickable="false"
+                    android:padding="10dip"
+                    android:text="@string/confirm"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:contentDescription="@string/empty"
+                android:src="@color/lineColor" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                />
+            
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+    <include
+        android:id="@+id/unLoginLayout"
+        layout="@layout/unlogin_foot_view"
+        android:visibility="visible" />
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:gravity="top" >
+    
+    <include layout="@layout/top_view2" />
+    
+    <TextView 
+        android:layout_gravity="left|top"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="@dimen/regMarginBoth"
+        android:text="@string/findPwdHint"
+        android:textSize="12sp"
+        android:textColor="@color/gray" />
+    
+    <EditText 
+        android:id="@+id/editFindEmail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/regEditHight"
+        android:layout_marginLeft="@dimen/regMarginBoth"
+        android:layout_marginRight="@dimen/regMarginBoth"
+		android:paddingLeft="@dimen/regEditPadding"
+		android:background="@drawable/edit_text_bg"
+		android:hint="@string/regEmail"
+		android:inputType="textEmailAddress" />
+    
+    <Button
+        android:id="@+id/btnFindPwd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/regEditHight"
+        android:layout_marginLeft="@dimen/regMarginBoth"
+        android:layout_marginRight="@dimen/regMarginBoth"
+		android:layout_marginTop="60dp"
+        android:background="@drawable/btn_bg"
+        android:onClick="onClick"
+        android:text="@string/findPwd"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+    
+</LinearLayout>

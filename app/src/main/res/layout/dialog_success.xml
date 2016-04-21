@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/corners_bg" >
+    
+    <TextView 
+        android:id="@+id/dsTitle"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="25dip"
+        android:layout_centerHorizontal="true" />
+    
+    <TextView 
+        android:id="@+id/dsContent"
+        android:layout_below="@id/dsTitle"
+        android:textSize="15sp"
+        android:textColor="#4A494A"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true" />
+    
+	<ImageView 
+	    android:id="@+id/dsLine1"
+	    android:layout_below="@id/dsContent"
+	    android:layout_height="1dip"
+	    android:layout_width="match_parent"
+	    android:background="@color/lineColor"
+	    android:contentDescription="@string/empty" />
+	
+	<Button
+	    android:id="@+id/dsBtnCancel"
+	    android:layout_below="@id/dsLine1"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:padding="10dp"
+	    android:background="@null"
+	    android:text="@string/confirm"
+	    android:textColor="@color/orange"
+	    android:gravity="center"
+	    android:textSize="19sp" />
+	    
+</RelativeLayout>

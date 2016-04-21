@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EEEEEE" >
+    <include layout="@layout/top_view2"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginTop="15dp"
+       >
+    <LinearLayout android:layout_width="match_parent"
+                  android:paddingTop="5dp" android:paddingBottom="5dp"
+                  android:background="@color/white" android:layout_height="wrap_content">
+        <TextView
+       	 android:text="@string/name"
+      	 style="@style/apply_edittext_text_left"/>
+         <TextView
+         android:singleLine="true"
+         android:maxEms="20"
+         android:ellipsize="marquee"
+      	 style="@style/apply_edittext_text_right"
+         android:id="@+id/applyde_et_name"/>
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="5dp"
+            android:background="@color/lineColor"/>
+    <LinearLayout android:layout_width="match_parent"
+                  android:paddingTop="5dp" android:paddingBottom="5dp"
+                  android:background="@color/white" android:layout_height="wrap_content">
+     <TextView
+       	 android:text="@string/apply_date"
+      	 style="@style/apply_edittext_text_left"/>
+    <TextView
+       style="@style/apply_edittext_text_right"
+        android:singleLine="true"
+        android:maxEms="20"
+        android:ellipsize="marquee"
+       android:id="@+id/applyde_et_date"/>
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="5dp"
+            android:background="@color/lineColor"/>
+     <LinearLayout android:layout_width="match_parent"
+                   android:paddingTop="5dp" android:paddingBottom="5dp"
+                   android:background="@color/white" android:layout_height="wrap_content">
+     <TextView
+       	 android:text="@string/apply_country"
+      	 style="@style/apply_edittext_text_left"/>
+    <TextView
+       style="@style/apply_edittext_text_right"
+       android:text="美国"
+        android:singleLine="true"
+        android:maxEms="20"
+        android:ellipsize="marquee"
+       android:id="@+id/applyde_et_country"/>
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="5dp"
+            android:background="@color/lineColor"/>
+    
+     <LinearLayout android:layout_width="match_parent"
+                   android:paddingTop="5dp" android:paddingBottom="5dp"
+                   android:background="@color/white" android:layout_height="wrap_content">
+     <TextView
+       	 android:text="@string/apply_state"
+      	 style="@style/apply_edittext_text_left"/>
+    <TextView
+       style="@style/apply_edittext_text_right"
+       android:text="申请中"
+       android:textColor="@color/orange"
+        android:singleLine="true"
+        android:maxEms="20"
+        android:ellipsize="marquee"
+       android:id="@+id/applyde_et_state"/>
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="5dp"
+            android:background="@color/lineColor"/>
+    
+    <Button 
+        android:layout_width="match_parent" 
+        android:textColor="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_bg_selector"
+        android:onClick="goBack"
+        android:layout_height="45dp" 
+        android:text="@string/back" />
+  
+    </LinearLayout>
+    
+   
+    
+ 
+</LinearLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:gravity="top|center_horizontal" >
+    
+    <include layout="@layout/top_view2" />
+    
+    <EditText 
+        android:id="@+id/regEditEmail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/regEditHight"
+        android:layout_marginLeft="@dimen/regMarginBoth"
+        android:layout_marginRight="@dimen/regMarginBoth"
+		android:layout_marginTop="20dp"
+		android:paddingLeft="@dimen/regEditPadding"
+		android:background="@drawable/edit_text_bg"
+		android:hint="@string/regEmail"
+		android:inputType="textEmailAddress" />
+    
+    <EditText 
+        android:id="@+id/regEditName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/regEditHight"
+        android:layout_marginLeft="@dimen/regMarginBoth"
+        android:layout_marginRight="@dimen/regMarginBoth"
+		android:layout_marginTop="@dimen/regSpace"
+		android:paddingLeft="@dimen/regEditPadding"
+		android:background="@drawable/edit_text_bg"
+		android:hint="@string/regRealname"
+		android:inputType="text" />
+    
+    <EditText 
+        android:id="@+id/regEditPhone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/regEditHight"
+        android:layout_marginLeft="@dimen/regMarginBoth"
+        android:layout_marginRight="@dimen/regMarginBoth"
+		android:layout_marginTop="@dimen/regSpace"
+		android:paddingLeft="@dimen/regEditPadding"
+		android:background="@drawable/edit_text_bg"
+		android:hint="@string/regPhone"
+		android:inputType="phone" />
+    
+    <EditText 
+        android:id="@+id/regEditPwd1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/regEditHight"
+        android:layout_marginLeft="@dimen/regMarginBoth"
+        android:layout_marginRight="@dimen/regMarginBoth"
+		android:layout_marginTop="@dimen/regSpace"
+		android:paddingLeft="@dimen/regEditPadding"
+		android:background="@drawable/edit_text_bg"
+		android:hint="@string/regPwd1"
+		android:inputType="textPassword" />
+    
+    <EditText 
+        android:id="@+id/regEditPwd2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/regEditHight"
+        android:layout_marginLeft="@dimen/regMarginBoth"
+        android:layout_marginRight="@dimen/regMarginBoth"
+		android:layout_marginTop="@dimen/regSpace"
+		android:paddingLeft="@dimen/regEditPadding"
+		android:background="@drawable/edit_text_bg"
+		android:hint="@string/regPwd2"
+		android:inputType="textPassword" />
+    
+    <LinearLayout 
+        android:orientation="horizontal" 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/regEditHight" 
+        android:layout_marginLeft="@dimen/regMarginBoth"
+        android:layout_marginRight="@dimen/regMarginBoth"
+		android:layout_marginTop="@dimen/regSpace"
+		android:gravity="left|center_vertical" >
+        <CheckBox 
+            android:id="@+id/cbAgreeMent" 
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:padding="3dp"
+            android:background="@drawable/check_box_bg"
+            android:button="@null"
+            android:checked="false" />
+        <ImageButton
+            android:id="@+id/regBtnUserMent"
+            android:src="@drawable/btn_agreement"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingLeft="@dimen/regEditPadding"
+            android:paddingTop="5dp"
+            android:paddingBottom="3dp"
+            android:contentDescription="@string/empty"
+            android:background="@color/clarity"
+            android:onClick="onClick" />
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/btnRegSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/regEditHight"
+        android:layout_marginLeft="@dimen/regMarginBoth"
+        android:layout_marginRight="@dimen/regMarginBoth"
+		android:layout_marginTop="@dimen/regSpace"
+        android:background="@drawable/btn_bg"
+        android:onClick="onClick"
+        android:text="@string/regSubmit"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+    
+</LinearLayout>

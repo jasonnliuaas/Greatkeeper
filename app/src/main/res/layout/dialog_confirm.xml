@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/corners_bg" >
+    
+    <TextView 
+        android:id="@+id/textMessage"
+        android:text="@string/empty"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="18dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_centerHorizontal="true" />
+	<ImageView 
+	    android:id="@+id/imgLine"
+	    android:layout_below="@id/textMessage"
+	    android:layout_height="1dip"
+	    android:layout_width="match_parent"
+	    android:background="@color/lineColor"
+	    android:contentDescription="@string/empty" />
+	<LinearLayout 
+	    android:layout_below="@id/imgLine"
+	    android:orientation="horizontal" 
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:gravity="center" >
+	    
+	    <Button 
+	        android:id="@+id/btnCancel"
+	        android:layout_width="0dip"
+	        android:layout_weight="1"
+	        android:layout_height="45dip"
+	        android:background="@null"
+	        android:text="@string/cancel"
+	        android:textSize="18sp"
+	        android:textColor="@color/orange" />
+	    
+	    <ImageView
+	        android:layout_width="1dip"
+	        android:layout_height="match_parent"
+	        android:background="@color/lineColor"
+	        android:contentDescription="@string/empty" />
+	    
+	    <Button 
+	        android:id="@+id/btnConfirm"
+	        android:layout_width="0dip"
+	        android:layout_weight="1"
+	        android:layout_height="45dip"
+	        android:background="@null"
+	        android:text="@string/confirm"
+	        android:textSize="18sp"
+	        android:textColor="@color/orange" />
+	    
+	</LinearLayout>
+	
+</RelativeLayout>

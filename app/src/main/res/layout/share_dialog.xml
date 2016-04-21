@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@color/white" >
+        
+		<LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:paddingTop="15dp"
+		    android:paddingBottom="10dp">
+		    
+		    <TextView 
+		        android:id="@+id/textBtnShareWeibo"
+		        android:layout_width="0dp"
+		        android:layout_weight="1"
+		        android:layout_height="wrap_content"
+		        android:text="@string/shareWeibo"
+		        android:textColor="@color/black"
+		        android:textSize="@dimen/textSizeMinor"
+		        android:gravity="center"
+		        android:drawableTop="@drawable/share_weibo"
+		        android:drawablePadding="5dp" />
+		    
+		    <TextView 
+		        android:id="@+id/textBtnShareQQZone"
+		        android:layout_width="0dp"
+		        android:layout_weight="1"
+		        android:layout_height="wrap_content"
+		        android:text="@string/shareQQZone"
+		        android:textColor="@color/black"
+		        android:textSize="@dimen/textSizeMinor"
+		        android:gravity="center"
+		        android:drawableTop="@drawable/share_qzone"
+		        android:drawablePadding="5dp" />
+		    
+		    <TextView 
+		        android:id="@+id/textBtnShareQQ"
+		        android:layout_width="0dp"
+		        android:layout_weight="1"
+		        android:layout_height="wrap_content"
+		        android:text="@string/shareQQ"
+		        android:textColor="@color/black"
+		        android:textSize="@dimen/textSizeMinor"
+		        android:gravity="center"
+		        android:drawableTop="@drawable/share_qq"
+		        android:drawablePadding="5dp" />
+		    
+		    <TextView 
+		        android:id="@+id/textBtnShareWeichat"
+		        android:layout_width="0dp"
+		        android:layout_weight="1"
+		        android:layout_height="wrap_content"
+		        android:text="@string/shareWeiXin"
+		        android:textColor="@color/black"
+		        android:textSize="@dimen/textSizeMinor"
+		        android:gravity="center"
+		        android:drawableTop="@drawable/share_weichat"
+		        android:drawablePadding="5dp" />
+		    
+		</LinearLayout>
+		
+		<LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:paddingTop="10dp"
+		    android:paddingBottom="10dp" >
+		    
+		    <TextView 
+		        android:id="@+id/textBtnShareFriend"
+		        android:layout_width="0dp"
+		        android:layout_weight="1"
+		        android:layout_height="wrap_content"
+		        android:text="@string/shareFriend"
+		        android:textColor="@color/black"
+		        android:textSize="@dimen/textSizeMinor"
+		        android:gravity="center"
+		        android:drawableTop="@drawable/share_friend"
+		        android:drawablePadding="5dp" />
+		    
+		    <TextView 
+		        android:layout_width="0dp"
+		        android:layout_weight="1"
+		        android:layout_height="wrap_content"
+		        android:text="@string/shareQQZone"
+		        android:textColor="@color/black"
+		        android:textSize="@dimen/textSizeMinor"
+		        android:gravity="center"
+		        android:drawableTop="@drawable/share_friend"
+		        android:drawablePadding="5dp"
+		        android:visibility="invisible" />
+		    
+		    <TextView 
+		        android:layout_width="0dp"
+		        android:layout_weight="1"
+		        android:layout_height="wrap_content"
+		        android:text="@string/shareQQ"
+		        android:textColor="@color/black"
+		        android:textSize="@dimen/textSizeMinor"
+		        android:gravity="center"
+		        android:drawableTop="@drawable/share_friend"
+		        android:drawablePadding="5dp"
+		        android:visibility="invisible" />
+		    
+		    <TextView 
+		        android:layout_width="0dp"
+		        android:layout_weight="1"
+		        android:layout_height="wrap_content"
+		        android:text="@string/shareWeiXin"
+		        android:textColor="@color/black"
+		        android:textSize="@dimen/textSizeMinor"
+		        android:gravity="center"
+		        android:drawableTop="@drawable/share_friend"
+		        android:drawablePadding="5dp"
+		        android:visibility="invisible" />
+		    
+		</LinearLayout>
+        
+    </LinearLayout>
+
+</RelativeLayout>

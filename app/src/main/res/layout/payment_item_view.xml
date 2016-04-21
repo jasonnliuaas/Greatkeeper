@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingRight="15dp"
+    android:background="@color/white" >
+    
+    <ImageView
+        android:id="@+id/imgPaymentType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_payment"
+        android:contentDescription="@string/empty" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_marginRight="10dp" >
+    <TextView
+        android:id="@+id/textPaymentType"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:gravity="start|center_vertical"
+        android:layout_marginLeft="10dp"
+        android:text="我在干的弗兰克的风景"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/textSizeMain" />
+        <TextView
+            android:id="@+id/textPaymentMsg"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="end"
+            android:maxEms="10"
+            android:maxLines="1"
+            android:text="我在干的弗兰克的风景"
+            android:textColor="@color/textGray1"
+            android:textSize="@dimen/textSizeMinor" />
+
+        </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textPaymentDay"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|end"
+            android:layout_marginBottom="1.5dp"
+            android:ellipsize="end"
+            android:maxEms="15"
+            android:singleLine="true"
+            android:text="今天到期"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/textSizeMain" />
+
+        <TextView
+            android:id="@+id/textPaymentDate"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="1.5dp"
+            android:gravity="center_vertical|end"
+            android:ellipsize="end"
+            android:maxEms="10"
+            android:singleLine="true"
+            android:text="2015-15-31"
+            android:textColor="@color/textGray"
+            android:textSize="@dimen/textSizeMinor" />
+    </LinearLayout>
+
+</LinearLayout>

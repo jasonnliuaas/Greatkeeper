@@ -1,0 +1,307 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    - <!--         Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+  -->
+    -
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        - <!--             Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+            -->
+    </style>
+    - <!--  Application theme.
+        -->
+    -
+
+    <style name="AppTheme" parent="AppBaseTheme">
+        - <!--  All customizations that are NOT specific to a particular API-level can go here.-->
+        <item name="colorAccent">@color/orange</item>
+    </style>
+    -
+
+    <style name="main_bottom_item_linear">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/bottomSize</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    -
+
+    <style name="main_bottom_item_image">
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">25dp</item>
+    </style>
+    -
+
+    <style name="main_bottom_item_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#82858b</item>
+    </style>
+
+    <style name="HouseSale_item_bigtext">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="HouseSale_item_smalltext">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="style_title_layout">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@color/title_orange</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/default_title_height</item>
+    </style>
+
+    <style name="style_title_right">
+        <item name="android:textSize">@dimen/text_size_larger_dimen</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/interval_default_dimen</item>
+        <item name="android:paddingRight">@dimen/interval_default_dimen</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="listview_template">
+        <item name="android:background">#00000000</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:listSelector">#00000000</item>
+        <item name="android:cacheColorHint">#00000000</item>
+        <item name="android:divider">#00000000</item>
+    </style>
+
+    <style name="apply_edittext_text_left">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">#808080</item>
+        <item name="android:textSize">@dimen/textSizeMinor</item>
+    </style>
+
+    <style name="apply_edittext_text_right">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/textSizeMinor</item>
+    </style>
+
+    <style name="apply_edittext">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColorHint">#CDCDCD</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="dialog_common" parent="android:style/Theme.Dialog">
+        <item name="android:background">@drawable/shape_apply_tip</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="style_block_title">
+        <item name="android:textSize">@dimen/text_size_default_dimen</item>
+        <item name="android:textColor">@color/default_text_focus_color</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">@dimen/interval_default_dimen</item>
+    </style>
+
+    <style name="HouseText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="HouseText.Content" parent="@style/HouseText">
+        <item name="android:textSize">@dimen/text_size_smaller_dimen</item>
+        <item name="android:textColor">@color/dark_grey</item>
+    </style>
+
+    <style name="HouseText.Content.white" parent="@style/HouseText.Content">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="HouseText.Theme" parent="@style/HouseText">
+        <item name="android:textSize">@dimen/text_size_larger_dimen</item>
+        <item name="android:textColor">@color/default_orange_color</item>
+    </style>
+
+    <style name="HouseText.Title" parent="@style/HouseText">
+        <item name="android:textSize">@dimen/text_size_default_dimen</item>
+        <item name="android:textColor">@color/house_title</item>
+    </style> <!-- 自定义仿IOS的ActionSheet底部Dialog的样式 ，有模糊效果 -->
+    <style name="ActionSheetDialogStyle" parent="@android:style/Theme.Dialog">
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 浮于Activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog以外的区域模糊效果 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- Dialog进入及退出动画 -->
+        <item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimation</item>
+    </style>
+
+
+    <!-- ActionSheet进出动画 -->
+    <style name="ActionSheetDialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/actionsheet_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/actionsheet_dialog_out</item>
+    </style>
+
+    <style name="PopupWindowAnimation">
+        <item name="android:windowEnterAnimation">@anim/popshow_anim</item>
+        <item name="android:windowExitAnimation">@anim/pophidden_anim</item>
+    </style>
+
+    <style name="style_detail_tv">
+        <item name="android:textSize">@dimen/text_size_default_dimen</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/interval_default_dimen</item>
+        <item name="android:paddingRight">@dimen/interval_small_dimen</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/textview_item_height</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_block">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/background_shape_block</item>
+        <item name="android:padding">@dimen/interval_default_dimen</item>
+    </style>
+
+    <style name="style_title_left">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/interval_default_dimen</item>
+        <item name="android:paddingRight">@dimen/interval_default_dimen</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="style_title_center">
+        <item name="android:textSize">@dimen/text_size_large_dimen</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxEms">8</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="MyDialogStyleBottom" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/AnimBottom</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    -
+
+    <style name="loadind" parent="android:Theme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    -
+
+    <style name="rent_detail_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:paddingBottom">@dimen/rentDetailSpacing</item>
+        <item name="android:paddingTop">@dimen/rentDetailSpacing</item>
+    </style>
+    -
+
+    <style name="rent_detail_lab">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">@dimen/listMarginLeft</item>
+        <item name="android:textColor">@color/textGray1</item>
+        <item name="android:textSize">@dimen/textSizeMain</item>
+    </style>
+    -
+
+    <style name="rent_detail_content">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textSize">@dimen/textSizeMinor</item>
+        <item name="android:textColor">@color/textGray</item>
+    </style>
+    -
+
+    <style name="rent_detail_people_cell">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/textGray1</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/textSizeMain</item>
+        <item name="android:paddingTop">@dimen/rentDetailSpacing</item>
+        <item name="android:paddingBottom">@dimen/rentDetailSpacing</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    -
+
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+</resources>

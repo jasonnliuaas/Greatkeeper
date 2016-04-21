@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+                android:paddingRight="15dp"
+    android:background="@color/white" >
+    
+    <View 
+        android:id="@+id/viewTopFlag"
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="@color/lineColor"
+        android:contentDescription="@string/empty"
+        android:layout_alignParentTop="true"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imgIcHouse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/empty"
+        android:src="@drawable/ic_house" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/imgIcHouse"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textHouseAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2.5dp"
+            android:ellipsize="end"
+            android:maxEms="11"
+            android:singleLine="true"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/textSizeMain" />
+
+        <TextView
+            android:id="@+id/textCreateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2.5dp"
+            android:ellipsize="end"
+            android:maxEms="11"
+            android:singleLine="true"
+            android:textColor="@color/textGray"
+            android:textSize="@dimen/textSizeMinor" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgRentGo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/empty"
+        android:src="@drawable/arrow_right" />
+
+</RelativeLayout>

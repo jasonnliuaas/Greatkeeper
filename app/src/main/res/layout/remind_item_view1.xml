@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/listBg"
+    android:paddingLeft="@dimen/listPadding"
+    android:paddingRight="@dimen/listPadding"
+    android:paddingTop="@dimen/listPadding" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corners_bg" >
+
+        <TextView
+            android:id="@+id/textMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="18dip"
+            android:layout_marginTop="18dip"
+            android:textColor="#8D8E90"
+            android:textSize="18sp"
+            android:maxEms="15"  
+			android:singleLine="true"  
+			android:ellipsize="end" />
+
+        <ImageView
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_below="@id/textMsg"
+            android:background="@color/lineColor"
+            android:contentDescription="@string/empty" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textTitle1"
+                android:layout_width="0dip"
+                android:layout_height="45dip"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="#EB0000"
+                android:textSize="16sp"
+                android:maxEms="3"  
+				android:singleLine="true"  
+				android:ellipsize="end"  />
+
+            <ImageView
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:background="@color/lineColor"
+                android:contentDescription="@string/empty" />
+
+            <TextView
+                android:id="@+id/textDate1"
+                android:layout_width="0dip"
+                android:layout_height="45dip"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="#8D8E90"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

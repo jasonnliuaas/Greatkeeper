@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/listBg"
+    android:orientation="vertical"
+    tools:context="com.newline.housekeeper.activity.LanguageActivity">
+
+    <include  layout="@layout/top_view4" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/rg_language"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/simplified_Chinese"
+            android:button="@null"
+            android:textSize="18sp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/selector_radiobutton"
+            android:textColor="@color/mainContent"
+            android:id="@+id/rb_lgcn"
+            android:checked="false"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:contentDescription="@string/empty"
+            android:src="@color/lineColor" />
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/English"
+            android:button="@null"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/selector_radiobutton"
+            android:textColor="@color/mainContent"
+            android:id="@+id/rb_lgen"
+            android:textSize="18sp"
+            android:checked="false"/>
+
+    </RadioGroup>
+
+</LinearLayout>

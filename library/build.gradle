@@ -1,0 +1,28 @@
+apply plugin: 'com.android.library'
+
+
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+    lintOptions {
+        abortOnError false
+    }
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+}
+
+dependencies {
+    compile 'com.pnikosis:materialish-progress:1.0'
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+}
+buildscript {
+    ext.kotlin_version = '1.0.1-2'
+    repositories {
+        mavenCentral()
+    }
+}
+repositories {
+    mavenCentral()
+}

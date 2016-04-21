@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:elevation="5dp"
+    android:gravity="center_horizontal" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@color/listBg"
+        android:layout_height="match_parent">
+
+
+    <TextView 
+        android:id="@+id/textMsgTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_gary"
+        android:gravity="center"
+        android:paddingStart="3dp"
+        android:paddingEnd="3dp" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="15dp"
+        android:background="@drawable/content_bg"
+        android:orientation="vertical" >
+        
+        <TextView 
+            android:id="@+id/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/textGray1"
+            android:layout_gravity="start" />
+        
+        <TextView 
+            android:id="@+id/textMsgDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSizeMain"
+            android:textColor="@color/textGray"
+            android:layout_gravity="start"
+            android:layout_marginTop="5dp" />
+        
+        <ImageView 
+            android:id="@+id/imgMsgPic"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:contentDescription="@string/empty"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/clarity" />
+        
+        <TextView
+            android:id="@+id/textMsgContext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/textGray"
+            android:textSize="@dimen/textSizeMain"
+            android:layout_gravity="start" />
+        
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lineColor"
+            android:layout_marginTop="10dp" />
+        
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/readAll"
+                android:textSize="@dimen/textSizeMain"
+                android:textColor="@color/textGray1"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true" />
+            
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/go_gray"
+                android:contentDescription="@string/empty"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

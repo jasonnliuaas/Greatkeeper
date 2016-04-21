@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/listBg" >
+
+    <include layout="@layout/top_view2" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lineColor"
+            android:layout_marginTop="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textPaymentType"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/textSizeMinor"
+                android:textColor="@color/textGray" />
+
+            <LinearLayout
+                android:id="@+id/layoutDay1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="bottom"
+                android:paddingTop="25dp"
+                android:paddingBottom="25dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:text="@string/left"
+                    android:textSize="30sp"
+                    android:textColor="@color/textGray1" />
+
+                <TextView
+                    android:id="@+id/textday_hundred"
+                    android:background="@drawable/rili"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom|center_horizontal"
+                    android:textSize="60sp"
+                    android:textColor="@color/orange" />
+
+
+                <TextView
+                    android:id="@+id/textday_ten"
+                    android:background="@drawable/rili"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom|center_horizontal"
+                    android:textSize="60sp"
+                    android:textColor="@color/orange" />
+                <TextView
+                    android:id="@+id/textday_single"
+                    android:background="@drawable/rili"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom|center_horizontal"
+                    android:textSize="60sp"
+                    android:textColor="@color/orange" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:text="@string/days"
+                    android:textSize="30sp"
+                    android:textColor="@color/textGray1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutDay0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="bottom"
+                android:paddingTop="25dp"
+                android:paddingBottom="25dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:text="@string/today"
+                    android:textSize="30sp"
+                    android:textColor="@color/textGray1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:gravity="center"
+                    android:text="@string/expired"
+                    android:textSize="35sp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/expired_bg" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/lineColor" />
+
+            <TextView
+                android:id="@+id/textPaymentContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="@dimen/textSizeMain"
+                android:textColor="@color/textGray1"
+                android:layout_marginRight="20dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lineColor" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lineColor"
+            android:layout_marginTop="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="start|top" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/labAddress"
+                android:textSize="@dimen/textSizeMinor"
+                android:textColor="@color/black"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:gravity="top|start" />
+
+            <TextView
+                android:id="@+id/textPaymentAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/textGray"
+                android:textSize="@dimen/textSizeMinor" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lineColor" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="start|top" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/labRentalTime"
+                android:textSize="@dimen/textSizeMinor"
+                android:textColor="@color/black"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:gravity="top|start" />
+
+            <TextView
+                android:id="@+id/textPaymentTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/textGray"
+                android:textSize="@dimen/textSizeMinor" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lineColor" />
+
+
+    </LinearLayout>
+
+
+    
+    <include
+        android:id="@+id/unLoginLayout"
+        layout="@layout/unlogin_foot_view"
+        android:visibility="visible" />
+    
+</LinearLayout>

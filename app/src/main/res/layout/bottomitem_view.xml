@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/bottomSize"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:contentDescription="@string/empty"
+        android:src="@color/lineColor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/index_layout"
+            style="@style/main_bottom_item_linear" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+                
+                <ImageView
+                    android:id="@+id/index_image"
+                    style="@style/main_bottom_item_image"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true"
+                    android:contentDescription="@string/empty"
+                    android:layout_marginTop="6dp" />
+                
+                <TextView
+                    android:id="@+id/index_text"
+                    style="@style/main_bottom_item_text"
+                    android:layout_below="@+id/index_image"
+                    android:text="@string/home"
+                    android:layout_centerHorizontal="true" />
+                
+                <TextView
+                    android:id="@+id/textHomeUnreadNum"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/filled_circle"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignEnd="@id/index_image"
+                    android:layout_marginEnd="-15dp"
+                    android:layout_marginTop="-5dp" />
+                
+            </RelativeLayout>
+        </LinearLayout>
+        
+       <LinearLayout
+            android:id="@+id/remind_layout"
+            style="@style/main_bottom_item_linear" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+                
+                <ImageView
+                    android:id="@+id/remind_image"
+                    style="@style/main_bottom_item_image"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="6dp"
+                    android:contentDescription="@string/empty" />
+                
+                <TextView
+                    android:id="@+id/remind_text"
+                    style="@style/main_bottom_item_text"
+                    android:layout_below="@+id/remind_image"
+                    android:text="@string/remind"
+                    android:layout_centerHorizontal="true" />
+                
+                <TextView
+                    android:id="@+id/textUnreadNum"
+                    android:layout_width="8dip"
+                    android:layout_height="8dip"
+                    android:background="@drawable/filled_circle"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    android:layout_alignTop="@id/remind_image"
+                    android:layout_alignEnd="@id/remind_text" />
+                
+            </RelativeLayout>
+           
+       </LinearLayout>
+
+       <LinearLayout
+            android:id="@+id/center_layout"
+            style="@style/main_bottom_item_linear" >
+
+            <ImageView
+                android:id="@+id/center_image"
+                android:layout_marginTop="6dp"
+                style="@style/main_bottom_item_image"
+                android:contentDescription="@string/empty" />
+
+            <TextView
+                android:id="@+id/center_text"
+                style="@style/main_bottom_item_text"
+                android:text="@string/center" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

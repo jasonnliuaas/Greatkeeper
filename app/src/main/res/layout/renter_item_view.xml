@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/textRenterName"
+        style="@style/rent_detail_people_cell"
+        android:textColor="@color/textGray"
+        android:textSize="@dimen/textSizeMinor"
+        android:textStyle="normal"
+        android:text="@string/rentPeopleName" />
+
+    <ImageView
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:contentDescription="@color/lineColor"
+        android:src="@color/lineColor" />
+
+    <TextView
+        android:id="@+id/textRenterJob"
+        style="@style/rent_detail_people_cell"
+        android:textColor="@color/textGray"
+        android:textSize="@dimen/textSizeMinor"
+        android:textStyle="normal"
+        android:text="@string/rentPeopleJob" />
+
+    <ImageView
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:contentDescription="@color/lineColor"
+        android:src="@color/lineColor" />
+
+    <TextView
+        android:id="@+id/textRenterCredit"
+        style="@style/rent_detail_people_cell"
+        android:textColor="@color/textGray"
+        android:textSize="@dimen/textSizeMinor"
+        android:textStyle="normal"
+        android:text="@string/rentPeopleCredit" />
+
+</LinearLayout>

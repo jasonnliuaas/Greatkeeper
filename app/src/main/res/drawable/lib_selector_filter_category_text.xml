@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@color/filter_tv_focus_color" />
+    <item android:state_focused="true" android:drawable="@color/filter_tv_focus_color" />
+    <item android:drawable="@drawable/lib_filter_bg_uncheck" />
+</selector>

@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top"
+    android:background="@color/listBg" >
+    
+    <include layout="@layout/top_view2" />
+    
+	<!-- 关于我们 -->
+    <RelativeLayout
+        android:id="@+id/layoutBtnAboutUs"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dip"
+        android:background="@color/white"
+        android:onClick="onClick" >
+        
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_height="1dip"
+            android:contentDescription="@string/empty"
+            android:src="@color/lineColor" />
+
+        <ImageView
+            android:id="@+id/imgLab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/centerMarginLeft"
+            android:contentDescription="@string/empty"
+            android:src="@drawable/btn_aboutus" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/centerSpacing"
+            android:layout_toRightOf="@id/imgLab1"
+            android:textColor="@color/centerTextColor"
+            android:textSize="@dimen/centerTextSize"
+            android:text="@string/moreAboutUs" />
+        
+        <ImageView 
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/centerMarginRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_right"
+            android:contentDescription="@string/empty" />
+        
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="1dip"
+            android:contentDescription="@string/empty"
+            android:paddingLeft="48dip"
+            android:src="@color/lineColor" />
+
+    </RelativeLayout>
+    
+    <!-- 功能介绍 -->
+    <RelativeLayout
+        android:id="@+id/layoutBtnPresent"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:onClick="onClick" >
+        
+        <ImageView
+            android:id="@+id/imgLab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/centerMarginLeft"
+            android:contentDescription="@string/empty"
+            android:src="@drawable/btn_present" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/centerSpacing"
+            android:layout_toRightOf="@id/imgLab2"
+            android:textColor="@color/centerTextColor"
+            android:textSize="@dimen/centerTextSize"
+            android:text="@string/morePresent" />
+        
+        <ImageView 
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/centerMarginRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_right"
+            android:contentDescription="@string/empty" />
+        
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="1dip"
+            android:contentDescription="@string/empty"
+            android:src="@color/lineColor" />
+    </RelativeLayout>
+    
+    <!-- 欢迎页 -->
+    <RelativeLayout
+        android:id="@+id/layoutBtnWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:onClick="onClick" >
+        
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_height="1dip"
+            android:contentDescription="@string/empty"
+            android:src="@color/lineColor" />
+        
+        <ImageView
+            android:id="@+id/imgLab3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/centerMarginLeft"
+            android:contentDescription="@string/empty"
+            android:src="@drawable/btn_welcome" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/centerSpacing"
+            android:layout_toRightOf="@id/imgLab3"
+            android:textColor="@color/centerTextColor"
+            android:textSize="@dimen/centerTextSize"
+            android:text="@string/moreWelcome" />
+        
+        <ImageView 
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/centerMarginRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_right"
+            android:contentDescription="@string/empty" />
+        
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="1dip"
+            android:contentDescription="@string/empty"
+            android:paddingLeft="48dip"
+            android:src="@color/lineColor" />
+
+    </RelativeLayout>
+    
+    <!-- 常见问题 -->
+    <RelativeLayout
+        android:id="@+id/layoutBtnProblem"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:onClick="onClick" >
+
+        <ImageView
+            android:id="@+id/imgLab5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/centerMarginLeft"
+            android:contentDescription="@string/empty"
+            android:src="@drawable/btn_problem" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/centerSpacing"
+            android:layout_toRightOf="@id/imgLab5"
+            android:textColor="@color/centerTextColor"
+            android:textSize="@dimen/centerTextSize"
+            android:text="@string/moreQuestion" />
+        
+        <ImageView 
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/centerMarginRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_right"
+            android:contentDescription="@string/empty" />
+        
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="1dip"
+            android:contentDescription="@string/empty"
+            android:src="@color/lineColor" />
+    </RelativeLayout>
+    
+    <!-- 币种切换 -->
+    <!--<RelativeLayout
+        android:id="@+id/layoutBtnCurrency"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dip"
+        android:background="@color/white"
+        android:onClick="onClick" >
+        
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_height="1dip"
+            android:contentDescription="@string/empty"
+            android:src="@color/lineColor" />
+
+        <ImageView
+            android:id="@+id/imgLab6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/centerMarginLeft"
+            android:contentDescription="@string/empty"
+            android:src="@drawable/btn_more_currency" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/centerSpacing"
+            android:layout_toRightOf="@id/imgLab6"
+            android:textColor="@color/centerTextColor"
+            android:textSize="@dimen/centerTextSize"
+            android:text="@string/moreCurrency" />
+        
+        <ImageView 
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/centerMarginRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_go"
+            android:contentDescription="@string/empty" />
+        
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="1dip"
+            android:contentDescription="@string/empty"
+            android:src="@color/lineColor" />
+    </RelativeLayout>
+    
+    &lt;!&ndash; 版本更新 &ndash;&gt;
+    <RelativeLayout
+        android:id="@+id/layoutBtnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dip"
+        android:background="@color/white"
+        android:onClick="onClick" >
+        
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_height="1dip"
+            android:contentDescription="@string/empty"
+            android:src="@color/lineColor" />
+
+        <ImageView
+            android:id="@+id/imgLab4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/centerMarginLeft"
+            android:contentDescription="@string/empty"
+            android:src="@drawable/btn_more_updata" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/centerSpacing"
+            android:layout_toRightOf="@id/imgLab4"
+            android:textColor="@color/centerTextColor"
+            android:textSize="@dimen/centerTextSize"
+            android:text="@string/moreUpdate" />
+        
+        <ImageView 
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/centerMarginRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_go"
+            android:contentDescription="@string/empty" />
+        
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="1dip"
+            android:contentDescription="@string/empty"
+            android:src="@color/lineColor" />
+    </RelativeLayout>-->
+    
+    
+    
+</LinearLayout>

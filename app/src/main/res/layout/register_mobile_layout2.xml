@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/listBg" >
+    
+    <include layout="@layout/top_view2" />
+    
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_mobile_reg2"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:contentDescription="@string/empty"
+        android:background="#fafafa" />
+
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lineColor" />
+    
+    <TextView 
+        android:id="@+id/textRegMobileTip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="@string/tipMobile"
+        android:textSize="@dimen/textSizeMinor"
+        android:textColor="@color/textGray" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@color/white"
+        android:gravity="center_vertical" >
+        
+        <TextView 
+            android:id="@+id/labVcode"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/labVcode"
+            android:textColor="@color/textGray1"
+            android:textSize="@dimen/textSizeMain" />
+        
+        <EditText 
+            android:id="@+id/editVcode"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:labelFor="@id/labVcode"
+            android:inputType="number"
+            android:hint="@string/hintVcode"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:background="@color/clarity"
+            android:textSize="@dimen/textSizeMinor" />
+        
+    </LinearLayout>
+    
+    <Button 
+        android:id="@+id/btnSendVcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg_selector"
+        android:text="@string/nextStep"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSizeMain"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="25dp" />
+    
+</LinearLayout>

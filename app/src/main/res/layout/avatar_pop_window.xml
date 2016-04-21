@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+<View
+   android:layout_width="match_parent"         
+   android:layout_height="1px"        
+   android:background="@color/black" />
+    <TextView
+        android:id="@+id/photograph_tv"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:text="@string/takephotobycamera"
+        android:textColor="@color/blue" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/select_from_photo_tv"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:text="@string/takephotobyalbum"
+        android:textColor="@color/blue" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+           android:textSize="16sp"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textColor="@color/blue" />
+
+</LinearLayout>

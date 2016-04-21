@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/listBg"
+    android:gravity="center_horizontal" >
+    
+    <include layout="@layout/top_view2" />
+    
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_mobile"
+        android:contentDescription="@string/empty"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="35dp" />
+    
+    <TextView 
+        android:id="@+id/textSafePhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textSizeMain"
+        android:textColor="@color/textGray1" />
+    
+    <Button 
+        android:id="@+id/btnUpdatePhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_orange_bg"
+        android:text="@string/changePhoneNum"
+        android:textSize="@dimen/textSizeMain"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp" />
+    
+</LinearLayout>

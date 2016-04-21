@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/listBg"
+    android:paddingLeft="@dimen/listPadding"
+    android:paddingRight="@dimen/listPadding"
+    android:paddingTop="@dimen/listPadding" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corners_bg" >
+
+        <TextView
+            android:id="@+id/textMsg2"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:textColor="#8D8E90"
+            android:textSize="20sp"
+            android:ellipsize="end"
+        	android:maxLines="2" />
+        
+        <ImageView
+            android:id="@+id/item2Line1"
+            android:layout_width="match_parent"
+            android:layout_below="@id/textMsg2"
+            android:layout_height="1dip"
+            android:background="@color/lineColor"
+            android:contentDescription="@string/empty" />
+        
+        <TextView
+            android:id="@+id/textDate2"
+            android:layout_below="@id/item2Line1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="8dip"
+            android:paddingBottom="8dip"
+            android:textColor="#8D8E90"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

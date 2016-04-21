@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top_view2" />
+
+    <ScrollView
+        android:id="@+id/scrollRentDetail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/listBg"
+        android:scrollbars="none"
+        android:overScrollMode="never" >
+
+        <LinearLayout
+            android:id="@+id/rentDetailLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 租约地址 -->
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:contentDescription="@string/empty"
+                android:src="@color/lineColor"
+                android:layout_marginTop="15dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/icon_address"
+                />
+            <TextView
+                android:id="@+id/textHouseAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/listMarginLeft"
+                android:textColor="@color/black"
+                android:paddingRight="15dp"
+                android:textSize="@dimen/textSizeMain" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:contentDescription="@string/empty"
+                android:src="@color/lineColor" />
+
+            <!-- 开始日期 -->
+
+            <LinearLayout style="@style/rent_detail_layout" >
+
+                <TextView
+                    style="@style/rent_detail_lab"
+                    android:text="@string/labStartDate" />
+
+                <TextView
+                    android:id="@+id/textStartDate"
+                    style="@style/rent_detail_content"
+                    android:gravity="right|center_vertical"
+                    android:layout_marginRight="@dimen/rentLineRight" />
+            </LinearLayout>
+
+            <include layout="@layout/short_line" />
+
+            <!-- 结束日期 -->
+
+            <LinearLayout style="@style/rent_detail_layout" >
+
+                <TextView
+                    style="@style/rent_detail_lab"
+                    android:text="@string/labEndDate" />
+
+                <TextView
+                    android:id="@+id/textRentEndDate"
+                    style="@style/rent_detail_content"
+                    android:gravity="right|center_vertical"
+                    android:layout_marginRight="@dimen/rentLineRight" />
+            </LinearLayout>
+
+            <include layout="@layout/short_line" />
+
+            <!-- 剩余天数 -->
+
+            <LinearLayout style="@style/rent_detail_layout" >
+
+                <TextView
+                    style="@style/rent_detail_lab"
+                    android:text="@string/labOpDay" />
+
+                <TextView
+                    android:id="@+id/textOpDay"
+                    style="@style/rent_detail_content"
+                    android:gravity="right|center_vertical"
+                    android:layout_marginRight="@dimen/rentLineRight" />
+            </LinearLayout>
+
+            <include layout="@layout/short_line" />
+
+            <!-- 缴租频率 -->
+
+            <LinearLayout style="@style/rent_detail_layout" >
+
+                <TextView
+                    style="@style/rent_detail_lab"
+                    android:text="@string/labRentFrey" />
+
+                <TextView
+                    android:id="@+id/textRentFrey"
+                    style="@style/rent_detail_content"
+                    android:gravity="right|center_vertical"
+                    android:layout_marginRight="@dimen/rentLineRight" />
+            </LinearLayout>
+
+            <include layout="@layout/short_line" />
+
+            <!-- 缴租时间 -->
+
+            <LinearLayout style="@style/rent_detail_layout" >
+
+                <TextView
+                    style="@style/rent_detail_lab"
+                    android:text="@string/labRentTime" />
+
+                <TextView
+                    android:id="@+id/textRentTime"
+                    style="@style/rent_detail_content"
+                    android:gravity="right|center_vertical"
+                    android:layout_marginRight="@dimen/rentLineRight" />
+            </LinearLayout>
+
+            <include layout="@layout/short_line" />
+
+            <!-- 月租金 -->
+
+            <LinearLayout style="@style/rent_detail_layout" >
+
+                <TextView
+                    style="@style/rent_detail_lab"
+                    android:text="@string/labRentMonth" />
+
+                <TextView
+                    android:id="@+id/textRentMonth"
+                    style="@style/rent_detail_content"
+                    android:gravity="right|center_vertical"
+                    android:layout_marginRight="@dimen/rentLineRight" />
+            </LinearLayout>
+
+            <include layout="@layout/short_line" />
+
+            <!-- 缴租模式 -->
+
+            <LinearLayout style="@style/rent_detail_layout" >
+
+                <TextView
+                    style="@style/rent_detail_lab"
+                    android:text="@string/labRentModel" />
+
+                <TextView
+                    android:id="@+id/textRentModel"
+                    style="@style/rent_detail_content"
+                    android:gravity="right|center_vertical"
+                    android:layout_marginRight="@dimen/rentLineRight" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:contentDescription="@string/empty"
+                android:src="@color/lineColor" />
+
+            <!-- 租客清单 -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="@dimen/listMarginLeft"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/tenant_icon"
+                android:gravity="center_vertical"
+                android:drawablePadding="5dp"
+                android:text="@string/rentPeopleList"
+                android:textSize="14sp" />
+
+            <!-- 租客清单表头 -->
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:contentDescription="@string/empty"
+                android:src="@color/lineColor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/rent_detail_people_cell"
+                    android:text="@string/rentPeopleName" />
+
+                <ImageView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@color/lineColor"
+                    android:src="@color/lineColor" />
+
+                <TextView
+                    style="@style/rent_detail_people_cell"
+                    android:text="@string/rentPeopleJob" />
+
+                <ImageView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@color/lineColor"
+                    android:src="@color/lineColor" />
+
+                <TextView
+                    style="@style/rent_detail_people_cell"
+                    android:text="@string/rentPeopleCredit" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:contentDescription="@string/empty"
+                android:src="@color/lineColor" />
+
+            <com.newline.housekeeper.control.ListViewForScrollView
+                android:id="@+id/listRenter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/lineColor"
+                android:dividerHeight="1dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:contentDescription="@string/empty"
+                android:src="@color/lineColor" />
+            
+
+        </LinearLayout>
+    </ScrollView>
+    <include
+        android:id="@+id/unLoginLayout"
+        layout="@layout/unlogin_foot_view" />
+
+</LinearLayout>

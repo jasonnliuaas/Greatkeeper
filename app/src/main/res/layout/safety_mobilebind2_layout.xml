@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/listBg"
+    android:gravity="center_horizontal" >
+    
+    <include layout="@layout/top_view2" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_marginTop="15dp" >
+        
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lineColor" />
+        
+        <EditText 
+            android:id="@+id/editSafetyPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:labelFor="@id/editSafetyPhone"
+            android:padding="10dp"
+            android:hint="@string/hintSafeMobile" 
+            android:background="@color/clarity" />
+        
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lineColor" />
+        
+    </LinearLayout>
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/tipSafeMobile"
+        android:textSize="@dimen/textSizeMinor"
+        android:textColor="@color/textGray"
+        android:layout_marginTop="10dp" />
+    
+    <Button 
+        android:id="@+id/btnSendVcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_orange_bg"
+        android:text="@string/sendVCode"
+        android:textSize="@dimen/textSizeMain"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_margin="10dp" />
+    
+</LinearLayout>

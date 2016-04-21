@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+              android:paddingRight="15dp"
+    android:background="@color/white" >
+    <TextView 
+        android:layout_height="0dp"
+        android:layout_width="0dp" 
+        android:id="@+id/baoshuiid"/>
+    <TextView 
+        android:layout_height="0dp"
+        android:layout_width="0dp" 
+        android:id="@+id/text_city"/>
+    <TextView 
+        android:layout_height="0dp"
+        android:layout_width="0dp" 
+        android:id="@+id/text_name"/>
+    <TextView 
+        android:layout_height="0dp"
+        android:layout_width="0dp" 
+        android:id="@+id/text_price"/>
+    <TextView 
+        android:layout_height="0dp"
+        android:layout_width="0dp" 
+        android:id="@+id/text_scale"/>
+    <TextView 
+        android:layout_height="0dp"
+        android:layout_width="0dp" 
+        android:id="@+id/text_country"/>
+    <ImageView
+        android:id="@+id/imgTaxType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/empty"
+        android:src="@drawable/icon_tax_apply" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textTaxMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2.5dp"
+            android:ellipsize="end"
+            android:maxEms="10"
+            android:singleLine="true"
+            android:text="@string/loan_apply2"
+            android:textColor="@color/textGray1"
+            android:textSize="@dimen/textSizeMain" />
+
+        <TextView
+            android:id="@+id/textTaxDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2.5dp"
+            android:ellipsize="end"
+            android:maxEms="10"
+            android:text="申请时间:昨天"
+            android:singleLine="true"
+            android:textColor="@color/textGray"
+            android:textSize="@dimen/textSizeMinor" />
+    </LinearLayout>
+    <TextView
+       android:id="@+id/textTaxstate"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:gravity="center_vertical|end"
+       android:layout_gravity="center_vertical"
+       android:ellipsize="end"
+       android:maxEms="10"
+       android:text="办理中"
+       android:layout_marginRight="10dp"
+       android:singleLine="true"
+       android:textColor="@color/orange"
+        android:textSize="@dimen/text_size_small_default_dimen" />
+
+
+
+</LinearLayout>

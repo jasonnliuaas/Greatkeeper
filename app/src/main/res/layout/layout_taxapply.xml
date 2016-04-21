@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TaxApplyActivity" >
+    <include layout="@layout/top_view2"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="15dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/gray" android:textSize="@dimen/textSizeMinor" android:text="@string/friendly_reminder"/>
+    <EditText
+       android:hint="@string/apply_name"
+       style="@style/apply_edittext"
+       android:layout_marginTop="20dp"
+        android:id="@+id/apply_et_name"/>
+    <EditText
+       style="@style/apply_edittext"
+       android:hint="@string/apply_email"
+       android:layout_marginTop="10dp"
+       android:inputType="textEmailSubject"
+       android:id="@+id/apply_et_email"/>
+    <EditText
+       style="@style/apply_edittext"
+       android:layout_marginTop="10dp"
+       android:inputType="phone"
+       android:hint="@string/apply_phone"
+       android:id="@+id/apply_et_phone"/>
+    <EditText
+       style="@style/apply_edittext"
+       android:hint="@string/apply_country"
+       android:drawableRight="@drawable/expand_spinner_selector"
+       android:layout_marginTop="10dp"
+       android:id="@+id/apply_et_country"/>
+    
+    <Button android:layout_width="match_parent" 
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_bg" android:layout_height="45dp" 
+        android:text="@string/submit_applications"  />
+    </LinearLayout>
+    
+   
+    
+ 
+</LinearLayout>

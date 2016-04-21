@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/topSize"
+    android:gravity="center_vertical"
+    android:background="@color/white" >
+    
+    <ImageButton
+        android:layout_width="@dimen/topSize"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:background="@null"
+        android:contentDescription="@string/empty"
+        android:onClick="goBack"
+        android:padding="5dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/btn_goback" />
+    
+    <TextView
+        android:id="@+id/textTopTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/mainContent" />
+    
+    <ImageButton
+        android:id="@+id/btnShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:contentDescription="@string/empty"
+        android:onClick="goShare"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:src="@drawable/btn_share"
+        android:layout_marginRight="10dp" />
+    
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@color/lineColor"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="@string/empty" />
+</RelativeLayout>

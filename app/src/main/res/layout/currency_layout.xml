@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/listBg" >
+    
+    <include layout="@layout/top_view2" />
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lineColor"
+        android:layout_marginTop="15dp" />
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@color/white" >
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nowCurrency"
+            android:textSize="@dimen/textSizeMain"
+            android:textColor="@color/textGray1"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp" />
+        
+        <LinearLayout
+            android:id="@+id/linearCurrency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp" >
+            
+            <TextView 
+                android:id="@+id/textNowCurrencyName"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/textSizeMain"
+                android:textColor="@color/textGray1" />
+            
+            <TextView 
+                android:id="@+id/textNowCurrencyAd"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/textSizeMain"
+                android:textColor="@color/textGray1" />
+            
+        </LinearLayout>
+        
+        <ImageView 
+            android:id="@+id/imgNowCurreny"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/linearCurrency"
+            android:contentDescription="@string/empty"
+            android:layout_marginRight="10dp" />
+        
+    </RelativeLayout>
+    
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/otherCurrency"
+        android:textSize="@dimen/textSizeMinor"
+        android:textColor="@color/textGray"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp" />
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lineColor"
+        android:layout_marginTop="10dp" />
+    
+	<!-- 其他币种 -->
+    <RelativeLayout 
+        android:id="@+id/btnUSDCurrency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/layout_selector" >
+        
+        <ImageView 
+            android:id="@+id/imgUSDCurreny"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/empty" 
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_currency_usd"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" />
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp" >
+            
+            <TextView 
+                android:id="@+id/USDCurrencyName"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/textSizeMain"
+                android:text="美元"
+                android:textColor="@color/textGray1" />
+            
+            <TextView 
+                android:id="@+id/USDCurrencyAd"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="USD"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/textSizeMain"
+                android:textColor="@color/textGray1" />
+            
+        </LinearLayout>
+        
+    </RelativeLayout>
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/lineColor" />
+    <RelativeLayout
+        android:id="@+id/btnAUDCurrency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/layout_selector" >
+
+        <ImageView
+            android:id="@+id/imgAUDCurreny"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/empty"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_currency_aud"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp" >
+
+            <TextView
+                android:id="@+id/AUDCurrencyName"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/textSizeMain"
+                android:text="澳元"
+                android:textColor="@color/textGray1" />
+
+            <TextView
+                android:id="@+id/AUDCurrencyAd"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="AUD"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/textSizeMain"
+                android:textColor="@color/textGray1" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/lineColor" />
+    <RelativeLayout
+        android:id="@+id/btnCADCurrency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:background="@drawable/layout_selector">
+
+        <ImageView
+            android:id="@+id/imgCADCurreny"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/empty"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_currency_cad"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp" >
+
+            <TextView
+                android:id="@+id/textAUDName"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="加元"
+                android:textSize="@dimen/textSizeMain"
+                android:textColor="@color/textGray1" />
+
+            <TextView
+                android:id="@+id/textAUDCurrencyAd"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="CAD"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/textSizeMain"
+                android:textColor="@color/textGray1" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/lineColor" />
+    <RelativeLayout
+        android:id="@+id/btnGbpCurrency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:background="@drawable/layout_selector" >
+
+        <ImageView
+            android:id="@+id/imGbpCurreny"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/empty"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_currency_gbp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp" >
+
+            <TextView
+                android:id="@+id/textGbpName"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="英镑"
+                android:textSize="@dimen/textSizeMain"
+                android:textColor="@color/textGray1" />
+
+            <TextView
+                android:id="@+id/textGbpCurrencyAd"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="GBP"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/textSizeMain"
+                android:textColor="@color/textGray1" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lineColor" />
+
+</LinearLayout>

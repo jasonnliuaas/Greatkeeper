@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item> 04.
+<shape> 05.
+<solid android:color="@color/default_orange_focus_color" />
+            <corners android:radius="10.0dip" android:topLeftRadius="2.0dip" android:topRightRadius="5.0dip" android:bottomLeftRadius="5.0dip" android:bottomRightRadius="5.0dip" />
+            <size android:height="9.0dip" android:width="15.0dip" /> 06.
+</shape> 07.
+</item> 08.
+    09.
+<item android:left="1.0dip" android:top="1.0dip" android:right="1.0dip" android:bottom="1.0dip"> 10.
+<shape> 11.
+<solid android:color="@color/default_orange_focus_color" /> 12.
+            13.
+<padding android:left="1.0dip" android:top="1.0dip" android:right="1.0dip" android:bottom="1.0dip" />
+            <corners android:radius="10.0dip" android:topLeftRadius="2.0dip" android:topRightRadius="5.0dip" android:bottomLeftRadius="5.0dip" android:bottomRightRadius="5.0dip" />
+            <size android:height="9.0dip" android:width="15.0dip" /> 17.
+</shape> 18.
+</item>
+</layer-list>

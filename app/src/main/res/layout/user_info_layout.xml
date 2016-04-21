@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top"
+    android:background="@color/listBg" >
+    
+    <include layout="@layout/top_view2" />
+    
+	<!-- 头像 -->
+    <RelativeLayout
+        android:id="@+id/layoutAvatar"
+        android:layout_width="match_parent"
+        android:layout_height="160dip"
+        android:background="@color/white"
+        android:onClick="onClick" >
+        
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:gravity="center_horizontal" >
+            
+            <com.newline.housekeeper.control.CircleImageView
+                android:id="@+id/imgUserAvatar"
+                android:layout_width="100dip"
+                android:layout_height="100dip"
+                android:contentDescription="@string/empty"
+                android:src="@drawable/img_addavatar" />
+
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textChanngeHead"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:textSize="14sp" />
+            
+        </LinearLayout>
+        
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:contentDescription="@string/empty"
+            android:layout_alignParentBottom="true"
+            android:src="@color/lineColor" />
+
+    </RelativeLayout>
+    
+    <!-- 登录密码修改 -->
+    <RelativeLayout
+        android:id="@+id/layoutBtnUpdatePwd"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dip"
+        android:background="@color/white"
+        android:onClick="onClick" >
+        
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_height="1dip"
+            android:contentDescription="@string/empty"
+            android:src="@color/lineColor" />
+
+        <ImageView
+            android:id="@+id/imgUpdatePwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/centerMarginLeft"
+            android:contentDescription="@string/empty"
+            android:src="@drawable/btn_user_updatepwd" />
+
+        <TextView
+            android:id="@+id/textUpdatePwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/centerSpacing"
+            android:layout_toRightOf="@id/imgUpdatePwd"
+            android:textColor="@color/centerTextColor"
+            android:textSize="@dimen/centerTextSize"
+            android:text="@string/updatePwd" />
+        
+        <ImageView 
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/centerMarginRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_right"
+            android:contentDescription="@string/empty" />
+        
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="1dip"
+            android:contentDescription="@string/empty"
+            android:src="@color/lineColor" />
+    </RelativeLayout>
+    
+	<!-- 个人信息修改 -->
+    <RelativeLayout
+        android:id="@+id/layoutBtnUpdateInfo"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dip"
+        android:background="@color/white"
+        android:onClick="onClick" >
+        
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_height="1dip"
+            android:contentDescription="@string/empty"
+            android:src="@color/lineColor" />
+
+        <ImageView
+            android:id="@+id/imgUpdateUserinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/centerMarginLeft"
+            android:contentDescription="@string/empty"
+            android:src="@drawable/btn_user_updateinfo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/centerSpacing"
+            android:layout_toRightOf="@id/imgUpdateUserinfo"
+            android:textColor="@color/centerTextColor"
+            android:textSize="@dimen/centerTextSize"
+            android:text="@string/updateUserinfo" />
+        
+        <ImageView 
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/centerMarginRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_right"
+            android:contentDescription="@string/empty" />
+        
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="1dip"
+            android:contentDescription="@string/empty"
+            android:src="@color/lineColor" />
+    </RelativeLayout>
+    
+	<!-- 注销登录 -->
+    <RelativeLayout
+        android:id="@+id/layoutBtnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dip"
+        android:background="@color/white"
+        android:onClick="onClick" >
+        
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_height="1dip"
+            android:contentDescription="@string/empty"
+            android:src="@color/lineColor" />
+
+        <ImageView
+            android:id="@+id/imgLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/centerMarginLeft"
+            android:contentDescription="@string/empty"
+            android:src="@drawable/btn_logout" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/centerSpacing"
+            android:layout_toRightOf="@id/imgLogout"
+            android:textColor="@color/centerTextColor"
+            android:textSize="@dimen/centerTextSize"
+            android:text="@string/logout" />
+        
+        <ImageView 
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/centerMarginRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_right"
+            android:contentDescription="@string/empty" />
+        
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="1dip"
+            android:contentDescription="@string/empty"
+            android:src="@color/lineColor" />
+    </RelativeLayout>
+    
+    
+
+</LinearLayout>

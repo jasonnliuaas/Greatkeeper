@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?><RelativeLayout android:background="@drawable/default_selector_list_item" android:padding="@dimen/interval_default_dimen" android:layout_width="fill_parent" android:layout_height="120.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/item_house_list_iv" android:layout_width="100.0dip" android:layout_height="80.0dip" android:layout_marginRight="@dimen/interval_default_dimen" android:src="@drawable/default_img" android:scaleType="centerCrop" />
+    <TextView android:id="@+id/item_house_list_title_tv" android:layout_marginBottom="@dimen/house_item_font_space" android:text="" android:layout_toRightOf="@id/item_house_list_iv" style="@style/HouseText.Title" />
+    <TextView android:id="@+id/item_house_list_area_tv" android:layout_marginBottom="@dimen/house_item_font_space" android:text="" android:layout_toRightOf="@id/item_house_list_iv" android:layout_below="@id/item_house_list_title_tv" style="@style/HouseText.Content" />
+    <TextView android:id="@+id/item_house_list_1_tv" android:text="-" android:layout_toRightOf="@id/item_house_list_area_tv" android:layout_below="@id/item_house_list_title_tv" style="@style/HouseText.Content" />
+    <TextView android:id="@+id/item_house_list_comm_tv" android:layout_marginRight="@dimen/interval_tiny_dimen" android:text="" android:layout_toRightOf="@id/item_house_list_1_tv" android:layout_below="@id/item_house_list_title_tv" style="@style/HouseText.Content" />
+    <TextView android:id="@+id/item_house_list_zzhz_tv" android:layout_marginBottom="@dimen/house_item_font_space" android:text="" android:layout_toRightOf="@id/item_house_list_iv" android:layout_below="@id/item_house_list_area_tv" style="@style/HouseText.Content" />
+    <TextView android:id="@+id/item_house_list_house_type_tv" android:layout_marginRight="@dimen/interval_tiny_dimen"  android:layout_toRightOf="@id/item_house_list_zzhz_tv" android:layout_below="@id/item_house_list_area_tv" style="@style/HouseText.Content" />
+ 	<TextView android:textSize="@dimen/text_size_larger_dimen" android:layout_below="@id/item_house_list_house_type_tv" android:text="售价:" android:textColor="@color/black" android:id="@+id/item_hw_yue" android:layout_toRightOf="@id/item_house_list_iv" style="@style/HouseText.Content" />
+    <TextView
+        android:id="@+id/item_house_list_price_tv"
+        style="@style/HouseText.Theme"
+        android:layout_below="@id/item_house_list_house_type_tv"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_marginLeft="@dimen/house_item_font_space"
+        android:text=""
+        android:layout_toRightOf="@id/item_hw_yue"
+        android:textSize="@dimen/text_size_more_larger_dimen" />
+    
+</RelativeLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+    <LinearLayout 
+        android:layout_width="match_parent" 
+        android:layout_height="match_parent" 
+        android:gravity="top"
+        android:orientation="vertical"
+     >
+     <include layout="@layout/top_view2" />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@drawable/login_bg" >
+        <ImageView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/login_logo"
+            android:contentDescription="@string/empty" />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginLeft="45dp"
+        android:orientation="horizontal" >
+        <ImageView 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:src="@drawable/account_lab"
+            android:contentDescription="@string/empty" />
+        
+        <com.newline.housekeeper.control.LineEditText 
+            android:id="@+id/eTextAccount"
+            android:layout_marginLeft="15dp"
+            android:padding="2dp"
+            android:maxWidth="200dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="@string/acctounHint"
+            android:background="@null"
+            android:inputType="textEmailAddress" />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:orientation="horizontal" >
+        <ImageView 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:src="@drawable/password_lab"
+            android:contentDescription="@string/empty" />
+        
+        <com.newline.housekeeper.control.LineEditText 
+            android:id="@+id/eTextPassword"
+            android:layout_marginLeft="15dp"
+            android:padding="2dp"
+            android:maxLength="14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:hint="@string/passwordHint"
+            android:background="@null"
+            android:inputType="textPassword" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical" >
+        
+        <TextView 
+            android:id="@+id/textRememberPwd"
+            android:layout_width="0dp" 
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginEnd="30dp"
+            android:text="@string/rememberPwd"
+            android:textSize="16sp"
+            android:textColor="@color/orange"
+            android:drawableStart="@drawable/img_checked"
+            android:drawablePadding="2dp" />
+        
+        <Button 
+            android:id="@+id/btnForgetPwd"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginStart="30dp"
+            android:gravity="end"
+            android:text="@string/forgetPassWord"
+            android:textColor="@color/blue"
+            android:textSize="16sp"
+            android:background="@color/clarity"
+            android:onClick="onClick" />
+        
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/btn_bg"
+        android:onClick="onClick"
+        android:padding="10dip"
+        android:text="@string/Login"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    
+        
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/btnRegist"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/register_btn_bg"
+        android:padding="10dip"
+        android:gravity="center"
+        android:text="@string/SignUp"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+    
+</RelativeLayout>
